@@ -7,6 +7,7 @@ import {items} from './data/items';
 import {categories} from './data/categories';
 import {getCurrentMonth, filterListByMonth} from './helpers/dateFilter';
 import { TableArea } from './components/TableArea';
+import { TableItem } from './components/TableItem';
 
 
 
@@ -26,7 +27,7 @@ function App() {
       </C.Header>
       <C.Body>
         
-        <TableArea/>
+        <TableArea list={filteredList}/>
       </C.Body>
     </C.Container>
   );
